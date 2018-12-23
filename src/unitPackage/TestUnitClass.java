@@ -1,20 +1,29 @@
 package unitPackage;
 
+import java.lang.Exception;
+
 import org.testng.Assert;
 
 public class TestUnitClass {
 
     public static void main(String[] args) {
 
-        UnitClass test = new UnitClass();
+        try {
 
-        int resultOfaddition = test.addition(7, 15);
+            UnitClass test = new UnitClass();
 
-        Assert.assertEquals(24,resultOfaddition);
+            int resultOfaddition = test.addition(7, 15);
 
-        int resultofsubtraction = test.addition(45, 10);
+            Assert.assertEquals(22, resultOfaddition);
 
-        Assert.assertEquals(resultOfaddition, 35);
+            int resultofsubtraction = test.subtraction(45, 10);
+
+            Assert.assertEquals(resultofsubtraction, 35);
+        }catch (AssertionError e){
+            System.out.println("Test Failed");
+        }
 
     }
 }
+
+//update now

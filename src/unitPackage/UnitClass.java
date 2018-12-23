@@ -6,10 +6,22 @@ public class UnitClass {
 
         int total = a+b;
 
-        return total;
+
+
+                   return total;
+
+
+        }
+
+        public  int subtraction (int a, int b){
+
+        int total_1= a-b;
+
+        return total_1;
+        }
 
 
     }
 
 
-}
+
